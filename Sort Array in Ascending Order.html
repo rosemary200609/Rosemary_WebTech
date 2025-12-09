@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sort Array Example</title>
+
+    <script>
+        function sortArray() {
+            
+            var numbers = [45, 12, 78, 3, 22, 9];
+
+        
+            numbers.sort(function(a, b) {
+                return a - b;
+            });
+
+        
+            document.getElementById("result").innerHTML =
+                "Sorted Array: " + numbers.join(", ");
+        }
+    </script>
+</head>
+
+<body>
+
+    <h2>Sorting an Array in Ascending Order</h2>
+
+    <button onclick="sortArray()">Sort Numbers</button>
+
+    <p id="result"></p>
+
+</body>
+</html>
